@@ -11,5 +11,8 @@ export function isDivisibleBy3(number) {
 }
 
 export function isDivisibleBy(number, divisor) {
+  if (divisor === undifined || divisor === 0) {
+    throw new Error('Error: divisor is missing or 0')
+  }
   return Math.abs(number % divisor) === 0
 }

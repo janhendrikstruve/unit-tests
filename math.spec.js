@@ -88,5 +88,13 @@ describe('math', () => {
       const result = isDivisibleBy(-7, 5)
       expect(result).toBe(false)
     })
+    it('throws an error, if deviding by 0', () => {
+      //const result = isDivisibleBy(-7, 0)
+      expect(() => isDivisibleBy(2, 0)).toThrow()
+    })
+    it('throws an error, if deviding by 0', () => {
+      //const result = isDivisibleBy(-7, 0)
+      expect(() => isDivisibleBy(2)).toThrow()
+    })
   })
 })
